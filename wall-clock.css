@@ -9,19 +9,26 @@ body{
     align-items: center;
     min-height: 100vh;
     overflow: hidden;
-    height:100vh;
+}
+.hexcolor{
+    position: absolute;
+    top: 20%;
 }
 .btn{
     position: absolute;
-    background-color: gray;
+    background-color: transparent;
     top: 5%;
     right: 3%;
     overflow: hidden;
     font-size: 15px;
     text-transform: capitalize;
-    color: blanchedalmond;
-    padding: 3px;
+    color: #fff;
+    padding: 5px;
     outline: none;
+    border: 1px solid blanchedalmond;
+}
+.btn:hover{
+    font-size: 16px;
 }
 .clock{
     width: 300px;
@@ -106,4 +113,46 @@ body{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+
+/* count down */
+
+.count{
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    bottom: 10%;
+}
+.giveway{
+    position: absolute;
+    display: inline-block;
+    bottom: 20%;
+}
+.count-formate{
+    width: 70px;
+    height: 60px;
+    background-color: #272626;
+    line-height: 1px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 3px;
+    color: blanchedalmond;
+    border-radius: 10px;
+}
+
+
+/* digital-clock */
+
+.digital-clock{
+    position: absolute;
+    top: 15%;
+    font-size: 40px;
+    font-family: Radioland;
+}
+
+@font-face{
+    font-family: Radioland;
+    src: url('RADIOLAND.TTF');
 }
