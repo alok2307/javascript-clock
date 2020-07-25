@@ -7,6 +7,12 @@
     <link rel="stylesheet" href="wall-clock.css">
 </head>
 <body>
+
+    <div class="digital-clock" id="myclock">
+
+    </div>
+    
+    <h2 class="hexcolor">Hex code is : <span class="hex"></span></h2>
     <button type="button" class="btn">bg color change</button>
     <div class="clock">
         <div class="hand hour" data-hour-hand></div>
@@ -25,7 +31,35 @@
         <div class="number number11">11</div>
         <div class="number number12">12</div>
         <!-- .number.number$*12{$}*12 -->
+    </div>
 
+    <div class="count">
+        <!-- Days -->
+       <div class="count-formate">
+            <div>
+                <h4 id="day"></h4>
+                <span>Days</span>
+            </div>
+       </div>
+       <div class="count-formate">
+            <div>
+                <h4 id="hours"></h4>
+                <span>Hours</span>
+            </div>
+       </div>
+       <div class="count-formate">
+            <div>
+                <h4 id="minuts"></h4>
+                <span>Min</span>
+            </div>
+       </div>
+       <div class="count-formate">
+            <div>
+                <h4 id="second"></h4>
+                <span>Second</span>
+            </div>
+       </div>
+        
     </div>
 
     <script src="wall-clock.js"></script>
